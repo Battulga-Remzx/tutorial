@@ -160,3 +160,7 @@ body {
            font-family: 'Brush Script MT', cursive;
            
         }
+  
+  .info h1 {
+    color:black;
+  }
