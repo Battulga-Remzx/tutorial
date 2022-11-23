@@ -47,9 +47,6 @@ button.addEventListener('click', () => {
     result.innerHTML = 'Таарсангүй'
     result.style.background = 'red';
     result.style.color = 'black'
-    setTimeout(() => {
-      alert('Таарсангүй')
-    }, 10000)
   }
 
   function win() {
@@ -68,34 +65,34 @@ button.addEventListener('click', () => {
     start()
     setTimeout(() => {
       fSpin()
-    }, 3000)
+    }, 1000)
     setTimeout(() => {
       sSpin()
-    }, 6000)
+    }, 2000)
     setTimeout(() => {
       win()
-    }, 9000)
+    }, 3000)
   } else if (num[1] == num[2] || num[1] == num[3] || num[2] == num[3]) {
     start()
     setTimeout(() => {
       fSpin()
-    }, 3000)
+    }, 1000)
     setTimeout(() => {
       sSpin()
-    }, 6000)
+    }, 2000)
     setTimeout(() => {
       win()
-    }, 9000)
+    }, 3000)
   } else {
     start()
     setTimeout(() => {
       fSpin()
-    }, 3000)
+    }, 1000)
     setTimeout(() => {
       sSpin()
-    }, 6000)
+    }, 2000)
     setTimeout(() => {
       lost()
-    }, 9000)
+    }, 3000)
   }
 })
