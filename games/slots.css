@@ -93,6 +93,7 @@ body {
 #button:hover {
   background: linear-gradient(90deg, green, red,blue, yellow, purple);
   background-size: 500%;
+  
 }
 
 .info {

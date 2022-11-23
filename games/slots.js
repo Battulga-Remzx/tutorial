@@ -74,9 +74,6 @@ function win() {
     setTimeout(() => {
       win()
     },9000)
-    setTimeout(() => {
-      win();
-    }, 9000)
   } else if(num[1] == num[2] || num[1] == num[3] || num[2] == num[3]) {
     start()
     setTimeout(() => {
@@ -88,9 +85,6 @@ function win() {
     setTimeout(() => {
       win()
     },9000)
-    setTimeout(() => {
-      win();
-    }, 9000)
   } else {
     start()
     setTimeout(() => {
@@ -102,8 +96,5 @@ function win() {
     setTimeout(() => {
       lost()
     },9000)
-    setTimeout(() => {
-      lost();
-    }, 9000)
   }
 })
