@@ -48,16 +48,117 @@ body {
 
 .info {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  position: relative;
-  align-items: center;
-  text-align: center;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
 }
 
 .info > p{
   border-style: solid;
   border-radius: 20px;
-  border-color: #04aa04;
   height: 75vh;
 }
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  a{
+    display: block;
+    width: 100px;
+    height: 35px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #6b6b6b8c;
+    transition: all .35s;
+  }
+  
+  a:hover{
+    color: #000000;
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
+  div.wrapper{
+    background-image: url(test/2048.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 210px;    
+  }
+.info p {
+  width: 230px;
+  height: 230px;
+}
+.button1 {
+  background: url('../photos/2048/2048.png') no-repeat;
+  border-radius: 20px;
+  width: 230px;
+  height: 230px;
+}
+.button2 {
+  background: url('../photos/TooTaa/slots\ \(2\).jpg') no-repeat;
+  border-radius: 20px;
+  width: 230px;
+  height: 230px;
+  position: flex;
+}
+.button3 {
+  background: url('../photos/TooTaa/guessnumber.jpg') no-repeat;
+  border-radius: 20px;
+  width: 230px;
+  height: 230px;
+}
 
+        .footer {
+           position: fixed;
+           left: 0;
+           bottom: 0px;
+           width: 100%;
+           background-color: rgba(107, 96, 96, 0.822);
+           color: white;
+           text-align: center;
+           font-family: 'Brush Script MT', cursive;
+           
+        }
+.button4 {
+  background: url('../photos/contact/fb2.jpg') no-repeat;
+  border-radius: 20px;
+  width: 230px;
+  height: 230px;
+}
+.button5 {
+  background: url('../photos/contact/instagram.jpg') no-repeat;
+  border-radius: 20px;
+  width: 230px;
+  height: 230px;
+}
+.button6 {
+  background: url('../photos/contact/itpark3.jpg') no-repeat;
+  border-radius: 20px;
+  width: 230px;
+  height: 230px;
+}
